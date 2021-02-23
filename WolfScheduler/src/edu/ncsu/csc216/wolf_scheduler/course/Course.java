@@ -38,14 +38,14 @@ public class Course {
 	 */
 	public Course(String name, String title, String section, int credits, String instructorId,
 			String meetingDays, int startTime, int endTime) {
-		this.name = name;
-		this.title = title;
-		this.section = section;
-		this.credits = credits;
-		this.instructorId = instructorId;
-		this.meetingDays = meetingDays;
-		this.startTime = startTime;
-		this.endTime = endTime;
+		setName(name);
+		setTitle(title);
+		setSection(section);
+		setCredits(credits);
+		setInstructorId(instructorId);
+		setMeetingDays(meetingDays);
+		setStartTime(startTime);
+		setEndTime(endTime);
 	}
 	
 	
@@ -60,12 +60,7 @@ public class Course {
 	 * @param meetingDays
 	 */
 	public Course(String name, String title, String section, int credits, String instructorId, String meetingDays) {
-		this.name = name;
-		this.title = title;
-		this.section = section;
-		this.credits = credits;
-		this.instructorId = instructorId;
-		this.meetingDays = meetingDays;
+		this(name, title, section, credits, instructorId, meetingDays, 0, 0);
 	}
 
 
@@ -78,7 +73,7 @@ public class Course {
 	/**
 	 * @param name the name to set
 	 */
-	public void setName(String name) {
+	private void setName(String name) {
 		this.name = name;
 	}
 	/**
