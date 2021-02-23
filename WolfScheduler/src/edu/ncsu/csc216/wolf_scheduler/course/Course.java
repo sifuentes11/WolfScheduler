@@ -240,6 +240,6 @@ public class Course {
 		if (meetingDays.equals("A")) {
 			return name + "," + title + "," + section + "," + credits + "," + instructorId + "," + meetingDays;
 		}
-		return name + "," + title + "," + section + "," + credits + "," + instructorId + "," + meetingDays;
+		return name + "," + title + "," + section + "," + credits + "," + instructorId + "," + meetingDays + "," + startTime + "," + endTime;
 	}
 }
