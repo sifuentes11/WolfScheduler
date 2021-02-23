@@ -465,144 +465,144 @@ public class CourseTest {
 	public void testSetCourseTime() {
 		//The code below is commented out until you make some changes to Course.
 		//Once those are made, remove the line of code fail() and uncomment the provided tests.
-		fail();
+//		fail();
 		
-//		Course c = new Course(NAME, TITLE, SECTION, CREDITS, INSTRUCTOR_ID, MEETING_DAYS, START_TIME, END_TIME);
-//		assertEquals(NAME, c.getName());
-//		assertEquals(TITLE, c.getTitle());
-//		assertEquals(SECTION, c.getSection());
-//		assertEquals(CREDITS, c.getCredits());
-//		assertEquals(INSTRUCTOR_ID, c.getInstructorId());
-//		assertEquals(MEETING_DAYS, c.getMeetingDays());
-//		assertEquals(START_TIME, c.getStartTime());
-//		assertEquals(END_TIME, c.getEndTime());
-//		
-//		//Test that setting the start time to 2400 doesn't change the start time (or anything else).
-//		try {
-//			c.setCourseTime(2400, 1445);
-//			fail();
-//		} catch (IllegalArgumentException e) {
-//			assertEquals(NAME, c.getName());
-//			assertEquals(TITLE, c.getTitle());
-//			assertEquals(SECTION, c.getSection());
-//			assertEquals(CREDITS, c.getCredits());
-//			assertEquals(INSTRUCTOR_ID, c.getInstructorId());
-//			assertEquals(MEETING_DAYS, c.getMeetingDays());
-//			assertEquals(START_TIME, c.getStartTime());
-//			assertEquals(END_TIME, c.getEndTime());
-//		}
-//		
-//		//Test that setting the start time to 1360 doesn't change the start time (or anything else).
-//		try {
-//			c.setCourseTime(1360, 1445);
-//			fail();
-//		} catch (IllegalArgumentException e) {
-//			assertEquals(NAME, c.getName());
-//			assertEquals(TITLE, c.getTitle());
-//			assertEquals(SECTION, c.getSection());
-//			assertEquals(CREDITS, c.getCredits());
-//			assertEquals(INSTRUCTOR_ID, c.getInstructorId());
-//			assertEquals(MEETING_DAYS, c.getMeetingDays());
-//			assertEquals(START_TIME, c.getStartTime());
-//			assertEquals(END_TIME, c.getEndTime());
-//		}
-//		
-//		//Test that setting the start time to -1 doesn't change the start time (or anything else).
-//		try {
-//			c.setCourseTime(-1, 1445);
-//			fail();
-//		} catch (IllegalArgumentException e) {
-//			assertEquals(NAME, c.getName());
-//			assertEquals(TITLE, c.getTitle());
-//			assertEquals(SECTION, c.getSection());
-//			assertEquals(CREDITS, c.getCredits());
-//			assertEquals(INSTRUCTOR_ID, c.getInstructorId());
-//			assertEquals(MEETING_DAYS, c.getMeetingDays());
-//			assertEquals(START_TIME, c.getStartTime());
-//			assertEquals(END_TIME, c.getEndTime());
-//		}
-//		
-//		//Test that setting the start time to 2400 doesn't change the start time (or anything else).
-//		try {
-//			c.setCourseTime(1330, 2400);
-//			fail();
-//		} catch (IllegalArgumentException e) {
-//			assertEquals(NAME, c.getName());
-//			assertEquals(TITLE, c.getTitle());
-//			assertEquals(SECTION, c.getSection());
-//			assertEquals(CREDITS, c.getCredits());
-//			assertEquals(INSTRUCTOR_ID, c.getInstructorId());
-//			assertEquals(MEETING_DAYS, c.getMeetingDays());
-//			assertEquals(START_TIME, c.getStartTime());
-//			assertEquals(END_TIME, c.getEndTime());
-//		}
-//		
-//		//Test that setting the start time to 1360 doesn't change the start time (or anything else).
-//		try {
-//			c.setCourseTime(1330, 1360);
-//			fail();
-//		} catch (IllegalArgumentException e) {
-//			assertEquals(NAME, c.getName());
-//			assertEquals(TITLE, c.getTitle());
-//			assertEquals(SECTION, c.getSection());
-//			assertEquals(CREDITS, c.getCredits());
-//			assertEquals(INSTRUCTOR_ID, c.getInstructorId());
-//			assertEquals(MEETING_DAYS, c.getMeetingDays());
-//			assertEquals(START_TIME, c.getStartTime());
-//			assertEquals(END_TIME, c.getEndTime());
-//		}
-//		
-//		//Test that setting the start time to -1 doesn't change the start time (or anything else).
-//		try {
-//			c.setCourseTime(1330, -1);
-//			fail();
-//		} catch (IllegalArgumentException e) {
-//			assertEquals(NAME, c.getName());
-//			assertEquals(TITLE, c.getTitle());
-//			assertEquals(SECTION, c.getSection());
-//			assertEquals(CREDITS, c.getCredits());
-//			assertEquals(INSTRUCTOR_ID, c.getInstructorId());
-//			assertEquals(MEETING_DAYS, c.getMeetingDays());
-//			assertEquals(START_TIME, c.getStartTime());
-//			assertEquals(END_TIME, c.getEndTime());
-//		}
-//		
-//		//Test that having the start time after the end time doesn't change the values.
-//		try {
-//			c.setCourseTime(1445, 1330);
-//			fail();
-//		} catch (IllegalArgumentException e) {
-//			assertEquals(NAME, c.getName());
-//			assertEquals(TITLE, c.getTitle());
-//			assertEquals(SECTION, c.getSection());
-//			assertEquals(CREDITS, c.getCredits());
-//			assertEquals(INSTRUCTOR_ID, c.getInstructorId());
-//			assertEquals(MEETING_DAYS, c.getMeetingDays());
-//			assertEquals(START_TIME, c.getStartTime());
-//			assertEquals(END_TIME, c.getEndTime());
-//		}
-//		
-//		//Valid set of start time
-//		c.setCourseTime(1350, 1445);
-//		assertEquals(NAME, c.getName());
-//		assertEquals(TITLE, c.getTitle());
-//		assertEquals(SECTION, c.getSection());
-//		assertEquals(CREDITS, c.getCredits());
-//		assertEquals(INSTRUCTOR_ID, c.getInstructorId());
-//		assertEquals(MEETING_DAYS, c.getMeetingDays());
-//		assertEquals(1350, c.getStartTime());
-//		assertEquals(END_TIME, c.getEndTime());
-//		
-//		//Valid set of end time
-//		c.setCourseTime(1350, 1526);
-//		assertEquals(NAME, c.getName());
-//		assertEquals(TITLE, c.getTitle());
-//		assertEquals(SECTION, c.getSection());
-//		assertEquals(CREDITS, c.getCredits());
-//		assertEquals(INSTRUCTOR_ID, c.getInstructorId());
-//		assertEquals(MEETING_DAYS, c.getMeetingDays());
-//		assertEquals(1350, c.getStartTime());
-//		assertEquals(1526, c.getEndTime());
+		Course c = new Course(NAME, TITLE, SECTION, CREDITS, INSTRUCTOR_ID, MEETING_DAYS, START_TIME, END_TIME);
+		assertEquals(NAME, c.getName());
+		assertEquals(TITLE, c.getTitle());
+		assertEquals(SECTION, c.getSection());
+		assertEquals(CREDITS, c.getCredits());
+		assertEquals(INSTRUCTOR_ID, c.getInstructorId());
+		assertEquals(MEETING_DAYS, c.getMeetingDays());
+		assertEquals(START_TIME, c.getStartTime());
+		assertEquals(END_TIME, c.getEndTime());
+		
+		//Test that setting the start time to 2400 doesn't change the start time (or anything else).
+		try {
+			c.setCourseTime(2400, 1445);
+			fail();
+		} catch (IllegalArgumentException e) {
+			assertEquals(NAME, c.getName());
+			assertEquals(TITLE, c.getTitle());
+			assertEquals(SECTION, c.getSection());
+			assertEquals(CREDITS, c.getCredits());
+			assertEquals(INSTRUCTOR_ID, c.getInstructorId());
+			assertEquals(MEETING_DAYS, c.getMeetingDays());
+			assertEquals(START_TIME, c.getStartTime());
+			assertEquals(END_TIME, c.getEndTime());
+		}
+		
+		//Test that setting the start time to 1360 doesn't change the start time (or anything else).
+		try {
+			c.setCourseTime(1360, 1445);
+			fail();
+		} catch (IllegalArgumentException e) {
+			assertEquals(NAME, c.getName());
+			assertEquals(TITLE, c.getTitle());
+			assertEquals(SECTION, c.getSection());
+			assertEquals(CREDITS, c.getCredits());
+			assertEquals(INSTRUCTOR_ID, c.getInstructorId());
+			assertEquals(MEETING_DAYS, c.getMeetingDays());
+			assertEquals(START_TIME, c.getStartTime());
+			assertEquals(END_TIME, c.getEndTime());
+		}
+		
+		//Test that setting the start time to -1 doesn't change the start time (or anything else).
+		try {
+			c.setCourseTime(-1, 1445);
+			fail();
+		} catch (IllegalArgumentException e) {
+			assertEquals(NAME, c.getName());
+			assertEquals(TITLE, c.getTitle());
+			assertEquals(SECTION, c.getSection());
+			assertEquals(CREDITS, c.getCredits());
+			assertEquals(INSTRUCTOR_ID, c.getInstructorId());
+			assertEquals(MEETING_DAYS, c.getMeetingDays());
+			assertEquals(START_TIME, c.getStartTime());
+			assertEquals(END_TIME, c.getEndTime());
+		}
+		
+		//Test that setting the start time to 2400 doesn't change the start time (or anything else).
+		try {
+			c.setCourseTime(1330, 2400);
+			fail();
+		} catch (IllegalArgumentException e) {
+			assertEquals(NAME, c.getName());
+			assertEquals(TITLE, c.getTitle());
+			assertEquals(SECTION, c.getSection());
+			assertEquals(CREDITS, c.getCredits());
+			assertEquals(INSTRUCTOR_ID, c.getInstructorId());
+			assertEquals(MEETING_DAYS, c.getMeetingDays());
+			assertEquals(START_TIME, c.getStartTime());
+			assertEquals(END_TIME, c.getEndTime());
+		}
+		
+		//Test that setting the start time to 1360 doesn't change the start time (or anything else).
+		try {
+			c.setCourseTime(1330, 1360);
+			fail();
+		} catch (IllegalArgumentException e) {
+			assertEquals(NAME, c.getName());
+			assertEquals(TITLE, c.getTitle());
+			assertEquals(SECTION, c.getSection());
+			assertEquals(CREDITS, c.getCredits());
+			assertEquals(INSTRUCTOR_ID, c.getInstructorId());
+			assertEquals(MEETING_DAYS, c.getMeetingDays());
+			assertEquals(START_TIME, c.getStartTime());
+			assertEquals(END_TIME, c.getEndTime());
+		}
+		
+		//Test that setting the start time to -1 doesn't change the start time (or anything else).
+		try {
+			c.setCourseTime(1330, -1);
+			fail();
+		} catch (IllegalArgumentException e) {
+			assertEquals(NAME, c.getName());
+			assertEquals(TITLE, c.getTitle());
+			assertEquals(SECTION, c.getSection());
+			assertEquals(CREDITS, c.getCredits());
+			assertEquals(INSTRUCTOR_ID, c.getInstructorId());
+			assertEquals(MEETING_DAYS, c.getMeetingDays());
+			assertEquals(START_TIME, c.getStartTime());
+			assertEquals(END_TIME, c.getEndTime());
+		}
+		
+		//Test that having the start time after the end time doesn't change the values.
+		try {
+			c.setCourseTime(1445, 1330);
+			fail();
+		} catch (IllegalArgumentException e) {
+			assertEquals(NAME, c.getName());
+			assertEquals(TITLE, c.getTitle());
+			assertEquals(SECTION, c.getSection());
+			assertEquals(CREDITS, c.getCredits());
+			assertEquals(INSTRUCTOR_ID, c.getInstructorId());
+			assertEquals(MEETING_DAYS, c.getMeetingDays());
+			assertEquals(START_TIME, c.getStartTime());
+			assertEquals(END_TIME, c.getEndTime());
+		}
+		
+		//Valid set of start time
+		c.setCourseTime(1350, 1445);
+		assertEquals(NAME, c.getName());
+		assertEquals(TITLE, c.getTitle());
+		assertEquals(SECTION, c.getSection());
+		assertEquals(CREDITS, c.getCredits());
+		assertEquals(INSTRUCTOR_ID, c.getInstructorId());
+		assertEquals(MEETING_DAYS, c.getMeetingDays());
+		assertEquals(1350, c.getStartTime());
+		assertEquals(END_TIME, c.getEndTime());
+		
+		//Valid set of end time
+		c.setCourseTime(1350, 1526);
+		assertEquals(NAME, c.getName());
+		assertEquals(TITLE, c.getTitle());
+		assertEquals(SECTION, c.getSection());
+		assertEquals(CREDITS, c.getCredits());
+		assertEquals(INSTRUCTOR_ID, c.getInstructorId());
+		assertEquals(MEETING_DAYS, c.getMeetingDays());
+		assertEquals(1350, c.getStartTime());
+		assertEquals(1526, c.getEndTime());
 	}
 	
 	/**
@@ -612,16 +612,16 @@ public class CourseTest {
 	public void testGetMeetingString() {
 		//The code below is commented out until you make some changes to Course.
 		//Once those are made, remove the line of code fail() and uncomment the provided tests.
-		fail();
+//		fail();
 		
-//		Course c1 = new Course(NAME, TITLE, SECTION, CREDITS, INSTRUCTOR_ID, MEETING_DAYS, START_TIME, END_TIME);
-//		assertEquals("MW 1:30PM-2:45PM", c1.getMeetingString());
-//		Course c2 = new Course(NAME, TITLE, SECTION, CREDITS, INSTRUCTOR_ID, MEETING_DAYS, 900, 1035);
-//		assertEquals("MW 9:00AM-10:35AM", c2.getMeetingString());
-//		Course c3 = new Course(NAME, TITLE, SECTION, CREDITS, INSTRUCTOR_ID, "A");
-//		assertEquals("Arranged", c3.getMeetingString());
-//		Course c4 = new Course(NAME, TITLE, SECTION, CREDITS, INSTRUCTOR_ID, "TH", 1145, 1425);
-//		assertEquals("TH 11:45AM-2:25PM", c4.getMeetingString());
+		Course c1 = new Course(NAME, TITLE, SECTION, CREDITS, INSTRUCTOR_ID, MEETING_DAYS, START_TIME, END_TIME);
+		assertEquals("MW 1:30PM-2:45PM", c1.getMeetingString());
+		Course c2 = new Course(NAME, TITLE, SECTION, CREDITS, INSTRUCTOR_ID, MEETING_DAYS, 900, 1035);
+		assertEquals("MW 9:00AM-10:35AM", c2.getMeetingString());
+		Course c3 = new Course(NAME, TITLE, SECTION, CREDITS, INSTRUCTOR_ID, "A");
+		assertEquals("Arranged", c3.getMeetingString());
+		Course c4 = new Course(NAME, TITLE, SECTION, CREDITS, INSTRUCTOR_ID, "TH", 1145, 1425);
+		assertEquals("TH 11:45AM-2:25PM", c4.getMeetingString());
 	}
 
 	/**
