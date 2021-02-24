@@ -9,6 +9,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.util.ArrayList;
+import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 import edu.ncsu.csc216.wolf_scheduler.course.Course;
@@ -49,11 +50,67 @@ public class CourseRecordIO {
 		return courses;
 	}
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	private static Course readCourse(String nextLine) {
 		// TODO Auto-generated method stub
-		return null;
+		
+		
+		try {
+			Scanner fileReader = new Scanner(nextLine);
+			fileReader.useDelimiter(",");
+			String courseCode = fileReader.next();
+			String description = fileReader.next();
+			String section = fileReader.next();
+			int hours = fileReader.nextInt();
+			String instructorID = fileReader.next();
+			String meetingDays = fileReader.next();
+			if (meetingDays.equals("A") && fileReader.hasNext() == false) {
+				
+				fileReader.close();
+				
+				return new Course (courseCode, description, section, hours, instructorID, meetingDays);
+
+			}
+			
+			int startTime = fileReader.nextInt();
+			int endTime = fileReader.nextInt();
+			
+			fileReader.close();
+			
+			return new Course (courseCode, description, section, hours, instructorID, meetingDays, startTime, endTime);
+			
+		
+		} catch (NoSuchElementException e) {
+			throw new IllegalArgumentException();
+		}
+		
+		
 	}
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	public static void writeCourseRecords(String fileName, ArrayList<Course> courses) throws IOException {
 		// TODO Auto-generated method stub
 		
