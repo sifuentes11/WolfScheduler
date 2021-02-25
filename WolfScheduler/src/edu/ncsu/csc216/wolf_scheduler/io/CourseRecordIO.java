@@ -110,7 +110,13 @@ public class CourseRecordIO {
 	
 	
 	
-	
+	/**
+	 * Writes a list of courses to the given file.
+	 * 
+	 * @param fileName the name of the file to write to the hard disk
+	 * @param courses the list of courses
+	 * @throws IOException if the file cannot be found
+	 */
 	public static void writeCourseRecords(String fileName, ArrayList<Course> courses) throws IOException {
 		// TODO Auto-generated method stub
 		
